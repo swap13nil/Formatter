@@ -5,11 +5,11 @@
 				<Page id="page" title="{i18n>title}">
 					<content>
 					    <Table id="idProductsTable"	items="{/ProductCollection}">
-	<columns>
-		<Column hAlign="Center" minScreenWidth="Tablet" demandPopin="true" width="15%">
+	<columns >
+		<Column hAlign="Center" minScreenWidth="Tablet" demandPopin="true" width="15%" class="yellow">
 			<Text text="ProductId"></Text>
 		</Column>
-			<Column hAlign="Center" minScreenWidth="Tablet" demandPopin="true" width="15%">
+			<Column hAlign="Center" minScreenWidth="Tablet" demandPopin="true" width="15%" class="green">
 			<Text text="Category"></Text>
 		</Column>
 		
@@ -27,10 +27,11 @@
 		</columns>
 	<items>
 		<ColumnListItem vAlign="Middle">
+			
 			<cells>
 				<Text wrapping="true" text="{ProductId}"></Text>
 					<Text wrapping="true" text="{Category}"></Text>
-						<Text wrapping="true" text="{WeightMeasure}"></Text>
+						<Text wrapping="true" text="{path:'WeightMeasure' , formatter:'.formatter.Weight'}"></Text>
 							<Text wrapping="true" text="{path: 'Status' , formatter:'.formatter.Status'}"></Text>
 			</cells>
 		</ColumnListItem>

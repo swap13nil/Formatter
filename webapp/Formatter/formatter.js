@@ -12,6 +12,19 @@ sap.ui.define([], function () {
 				return "Not-Available";
 			}
 			
+		},
+		
+		Weight:function(oEvent){
+				if(oEvent <= "30"){
+				return "Lightweight";
+			}
+			
+			else {
+				return "Heavyweight";
+			}
+			
+			
+			
 		}
 		
 		
