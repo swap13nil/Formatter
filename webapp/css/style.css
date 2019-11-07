@@ -1,7 +1,7 @@
 /* Enter your custom styles here */
 
   .green {
-            background-color: #66FF33;
+            background-color: #66FF33 !important;
         }
         .red {
             background-color: #FF3300;
