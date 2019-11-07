@@ -1,0 +1,48 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="tab.tableControl.controller.FirstView" displayBlock="true">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+					    <Table id="idProductsTable"	items="{/ProductCollection}">
+	<columns>
+		<Column hAlign="Center" minScreenWidth="Tablet" demandPopin="true" width="15%">
+			<Text text="ProductId"></Text>
+		</Column>
+			<Column hAlign="Center" minScreenWidth="Tablet" demandPopin="true" width="15%">
+			<Text text="Category"></Text>
+		</Column>
+		
+			<Column hAlign="Center" minScreenWidth="Tablet" demandPopin="true" width="15%">
+			<Text text="WeightMeasure"></Text>
+		</Column>
+		
+		
+			<Column hAlign="Center" minScreenWidth="Tablet" demandPopin="true" width="15%">
+			<Text text="Status"></Text>
+		</Column>
+		
+		
+	
+		</columns>
+	<items>
+		<ColumnListItem vAlign="Middle">
+			<cells>
+				<Text wrapping="true" text="{ProductId}"></Text>
+					<Text wrapping="true" text="{Category}"></Text>
+						<Text wrapping="true" text="{WeightMeasure}"></Text>
+							<Text wrapping="true" text="{Status}"></Text>
+			</cells>
+		</ColumnListItem>
+	</items>
+</Table>
+					   
+					   
+					   
+					  
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
