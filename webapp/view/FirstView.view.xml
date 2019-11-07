@@ -31,7 +31,7 @@
 				<Text wrapping="true" text="{ProductId}"></Text>
 					<Text wrapping="true" text="{Category}"></Text>
 						<Text wrapping="true" text="{WeightMeasure}"></Text>
-							<Text wrapping="true" text="{Status}"></Text>
+							<Text wrapping="true" text="{path: 'Status' , formatter:'.formatter.Status'}"></Text>
 			</cells>
 		</ColumnListItem>
 	</items>
